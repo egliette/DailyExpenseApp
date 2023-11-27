@@ -1,0 +1,15 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="images">
+        <file alias="login.svg">../assets/login.svg</file>
+        <file alias="icon">../assets/icon.png</file>
+    </qresource>
+    <qresource prefix="icons">
+        <file alias="user.svg">../assets/user.svg</file>
+        <file alias="add.svg">../assets/add.svg</file>
+        <file alias="remove.svg">../assets/remove.svg</file>
+        <file alias="save.svg">../assets/save.svg</file>
+        <file alias="edit.svg">../assets/edit.svg</file>
+        <file alias="view.svg">../assets/view.svg</file>
+    </qresource>
+</RCC>
