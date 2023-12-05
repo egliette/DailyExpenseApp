@@ -39,6 +39,8 @@ class RecordEditingUI(QMainWindow):
             data.to_csv(self.save_fpath, index=False)
             data = data.drop("Date", axis=1)
 
+        data = data.reset_index(drop=True)
+
         self.model = OneDayTableModel(data)
         self.tableView.setModel(self.model)
         header = self.tableView.horizontalHeader()       
@@ -65,5 +67,6 @@ class RecordEditingUI(QMainWindow):
         selected_indexes = self.tableView.selectedIndexes()
         if selected_indexes:
             row_to_remove = selected_indexes[0].row()
+            print(row_to_remove)
             self.model.remove_row(row_to_remove)
             self.tableView.clearSelection()
