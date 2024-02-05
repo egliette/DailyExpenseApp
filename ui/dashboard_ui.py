@@ -198,7 +198,7 @@ class DashboardUI(QMainWindow):
         header.setSectionResizeMode(0, QHeaderView.ResizeToContents)
         total_spending = int(new_df['Spending'].sum())
         total_spending = "{:,}".format(total_spending).replace(",", ".")
-        self.totalSpendingLabel.setText(f"Total spending of this week: {total_spending}")
+        self.totalSpendingLabel.setText(f"Total spending: {total_spending}")
 
         self.update_full_graph()
 
